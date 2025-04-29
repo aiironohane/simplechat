@@ -9,10 +9,10 @@ new BedrockChatbotStack(app, 'BedrockChatbotStack', {
   modelId: 'us.amazon.nova-lite-v1:0',
   // modelId: 'us.amazon.nova-micro-v1:0',
   
-  // 環境変数から取得したリージョンを使用、またはデフォルトとしてap-east-1を使用
+  // 環境変数から取得したリージョンを使用、またはデフォルトとしてus-east-1を使用
   env: { 
     account: process.env.CDK_DEFAULT_ACCOUNT, 
-    region: process.env.CDK_DEFAULT_REGION || 'ap-east-1'
+    region: process.env.CDK_DEFAULT_REGION || 'us-east-1'
   },
 });
 
